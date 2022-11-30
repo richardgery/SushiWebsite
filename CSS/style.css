@@ -2,8 +2,6 @@
 
 :root {
   --header-height: 3.5rem;
-
-  /*========== Color ==========*/
   --first-color: hsl(19, 64%, 54%);
   --first-color-alt: hsl(19, 64%, 52%);
   --title-color: hsl(19, 16%, 15%);
@@ -11,8 +9,6 @@
   --text-color-light: hsl(19, 8%, 55%);
   --body-color: hsl(19, 100%, 96%);
   --container-color: hsl(19, 100%, 97%);
-
-  /*========== Font & Typography ==========*/
   --body-font: "Poppins", sans-serif;
   --title-font: "Lora", serif;
   --subtitle-font: "Dancing Script", cursive;
@@ -23,12 +19,8 @@
   --normal-font-size: 0.93rem;
   --small-font-size: 0.81rem;
   --smaller-font-size: 0.7rem;
-
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== z-index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -83,7 +75,7 @@ img {
   max-width: 100%;
 }
 
-.container {
+.contain {
   margin-inline: 1.5rem;
   max-width: 1024px;
 }
@@ -118,4 +110,84 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+/* header and nav */
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.3s, background 0.4s;
+  -webkit-transition: box-shadow 0.3s, background 0.4s;
+  -moz-transition: box-shadow 0.3s, background 0.4s;
+  -ms-transition: box-shadow 0.3s, background 0.4s;
+  -o-transition: box-shadow 0.3s, background 0.4s;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.nav-logo,
+.nav-close,
+.nav-toogle {
+  display: flex;
+  color: var(--title-color);
+}
+
+.nav-logo {
+  column-gap: 0.5rem;
+  align-items: center;
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+.nav-logo img {
+  width: 25px;
+}
+
+.nav-logo:hover {
+  color: var(--first-color);
+}
+
+.nav-toogle {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
+    padding-block: 3.5rem;
+    transition: top 0.4s;
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -ms-transition: top 0.4s;
+    -o-transition: top 0.4s;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
 }
