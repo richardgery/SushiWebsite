@@ -245,3 +245,72 @@ img {
 .show-menu {
   top: 0;
 }
+
+/* home */
+.home {
+  position: relative;
+}
+
+.home-contain {
+  padding-top: 2rem;
+  row-gap: 3rem;
+}
+
+.home-img {
+  width: 300px;
+  justify-self: center;
+}
+
+.home-data {
+  text-align: center;
+}
+
+.home-title {
+  margin-bottom: 1rem;
+  font-family: var(--title-font);
+  font-size: var(--biggest-font-size);
+}
+
+.home-title img {
+  width: 40px;
+}
+
+.home-title div {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  justify-content: center;
+}
+
+.home-description {
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+
+.home-leaf-1,
+.home-leaf-2 {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.home-leaf-1 {
+  width: 80px;
+  top: 8rem;
+  left: -1rem;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.home-leaf-2 {
+  width: 100px;
+  bottom: 1rem;
+  right: -2rem;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
