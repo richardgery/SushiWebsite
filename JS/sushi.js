@@ -30,3 +30,13 @@ const listAction = () => {
 };
 
 navLink.forEach((n) => n.addEventListener("click", listAction));
+
+// change background header
+
+const scrollHeader = () => {
+  const head = document.getElementById("head");
+  this.scrollY >= 50
+    ? head.classList.add("bg-header")
+    : head.classList.remove("bg-header");
+};
+window.addEventListener("scroll", scrollHeader);
