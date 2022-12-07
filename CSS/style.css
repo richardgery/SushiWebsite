@@ -361,3 +361,45 @@ img {
 .bg-header {
   box-shadow: 0 2px 8px hsla(19, 64%, 24%, 0.1);
 }
+
+/* about */
+.about {
+  position: relative;
+}
+
+.about-contain {
+  row-gap: 3rem;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-title img {
+  width: 30px;
+}
+
+.about-title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.about-img {
+  width: 300px;
+  justify-self: center;
+}
+
+.about-leaf {
+  width: 100px;
+  opacity: 0.2;
+  position: absolute;
+  right: -1.5rem;
+  bottom: 11rem;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
