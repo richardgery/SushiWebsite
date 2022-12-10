@@ -12,13 +12,13 @@
   --body-font: "Poppins", sans-serif;
   --title-font: "Lora", serif;
   --subtitle-font: "Dancing Script", cursive;
-  --biggest-font-size: 2.2rem;
+  --biggest-font-size: 2.23rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 1.2rem;
+  --h2-font-size: 1.23rem;
   --h3-font-size: 1rem;
-  --normal-font-size: 0.93rem;
-  --small-font-size: 0.81rem;
-  --smaller-font-size: 0.7rem;
+  --normal-font-size: 0.936rem;
+  --small-font-size: 0.811rem;
+  --smaller-font-size: 0.73rem;
   --font-medium: 500;
   --font-semi-bold: 600;
   --z-tooltip: 10;
@@ -28,12 +28,12 @@
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 4rem;
-    --h1-font-size: 2.2rem;
+    --h1-font-size: 2.23rem;
     --h2-font-size: 1.5rem;
-    --h3-font-size: 1.2rem;
+    --h3-font-size: 1.23rem;
     --normal-font-size: 1rem;
-    --small-font-size: 0.87rem;
-    --smaller-font-size: 0.81rem;
+    --small-font-size: 0.873rem;
+    --smaller-font-size: 0.811rem;
   }
 }
 
@@ -165,7 +165,7 @@ img {
 
 .nav-toogle {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.23rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -222,7 +222,7 @@ img {
 
 .nav-img-1 {
   width: 100px;
-  top: 0.7rem;
+  top: 0.73rem;
   left: -2rem;
   transform: rotate(165deg);
   -webkit-transform: rotate(165deg);
@@ -350,11 +350,11 @@ img {
 }
 
 .button:hover i {
-  transform: translateX(0.2rem);
-  -webkit-transform: translateX(0.2rem);
-  -moz-transform: translateX(0.2rem);
-  -ms-transform: translateX(0.2rem);
-  -o-transform: translateX(0.2rem);
+  transform: translateX(0.23rem);
+  -webkit-transform: translateX(0.23rem);
+  -moz-transform: translateX(0.23rem);
+  -ms-transform: translateX(0.23rem);
+  -o-transform: translateX(0.23rem);
 }
 
 /* change background header */
@@ -441,5 +441,54 @@ img {
 .popular-name {
   font-size: var(--h3-font-size);
   font-family: var(--title-font);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.23rem;
+}
+
+.popular-description {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: var(--smaller-font-size);
+}
+
+.popular-price {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.popular-button {
+  display: flex;
+  background-color: var(--first-color);
+  padding: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 20px hsla(19, 64%, 20%, 0.2);
+  color: #fff;
+  font-size: 1.23rem;
+  position: absolute;
+  bottom: 1.23rem;
+  right: 1.23rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+.popular-button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.popular-card:hover .popular-img {
+  transform: translateY(-0.23rem);
+  -webkit-transform: translateY(-0.23rem);
+  -moz-transform: translateY(-0.23rem);
+  -ms-transform: translateY(-0.23rem);
+  -o-transform: translateY(-0.23rem);
 }
