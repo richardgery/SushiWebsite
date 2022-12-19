@@ -581,3 +581,49 @@ img {
   top: -4.5rem;
   left: -8rem;
 }
+
+.newsletter-data,
+.section__title {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.newsletter-form {
+  background-color: #fff;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  padding: 5px 5px 5px 16px;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.newsletter-input,
+.newsletter-button {
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+}
+
+.newsletter-input {
+  color: var(--text-color);
+  width: 90%;
+}
+
+.newsletter-button {
+  cursor: pointer;
+}
+
+.newsletter-spinach {
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  width: 30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
